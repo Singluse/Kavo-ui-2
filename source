@@ -1,0 +1,326 @@
+local Library = loadstring(game:HttpGet("https://raw.githubusercontent.com/Singluse/Kavo-ui-mfh/main/Kavoui"))() --This Will Load The Script Code
+local Window = Library.CreateLib("Key System", "Ocean") --This Will Make The Script Hub
+
+local OrionLib = loadstring(game:HttpGet(('https://raw.githubusercontent.com/shlexware/Orion/main/source')))() 
+
+local Player = game.Players.LocalPlayer
+
+function CorrectKeyAndLoadTheScript()
+local Library = loadstring(game:HttpGet("https://raw.githubusercontent.com/Singluse/Kavo-ui-mfh/main/Kavoui"))()
+local Window = Library.CreateLib("Alactical Hack(Old)", "Ocean")
+
+---Tabs/Section
+
+local Tab = Window:NewTab("Main1")
+local Section = Tab:NewSection("Player Cheat")
+
+Section:NewButton("Inf Jump", "You Jump is inf", function()
+    local InfiniteJumpEnabled = true
+game:GetService("UserInputService").JumpRequest:connect(function()
+	if InfiniteJumpEnabled then
+		game:GetService"Players".LocalPlayer.Character:FindFirstChildOfClass'Humanoid':ChangeState("Jumping")
+	end
+end)
+end)
+
+Section:NewButton("FullBright", "Make You Light", function()
+    --[[ Subscribe to Zaptosis on YouTube for more awesome scripts!
+
+ 
+
+░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░
+
+███▀▀▀███░░░░░░░░░░░░░░░░░░░██░░░░░░░░░░░░░░░░░░░░██░░░░░░░░░
+
+█▀░░░███░░░░░░░░░░░░░░░░░░░░██░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░
+
+▀░░░███░░▄█▀██▄░▀████████▄██████░░▄██▀██▄░▄██▀██████░░▄██▀███
+
+░░░███░░██░░░██░░░██░░░▀██░░██░░░██▀░░░▀████░░░▀▀░██░░██░░░▀▀
+
+░░███░░░▄▄█████░░░██░░░░██░░██░░░██░░░░░██▀█████▄░██░░▀█████▄
+
+░███░░░▄██░░░██░░░██░░░▄██░░██░░░██▄░░░▄███▄░░░██░██░░█▄░░░██
+
+█████████████▀██▄░██████▀░░░▀████░▀█████▀░██████▀████▄██████▀
+
+░░░░░░░░░░░░░░░░░░██░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░
+
+░░░░░░░░░░░░░░░░▄████▄░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░
+
+░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░
+
+]]
+
+
+
+local Light = game:GetService("Lighting")
+
+
+
+function dofullbright()
+
+Light.Ambient = Color3.new(1, 1, 1)
+
+Light.ColorShift_Bottom = Color3.new(1, 1, 1)
+
+Light.ColorShift_Top = Color3.new(1, 1, 1)
+
+end
+
+
+
+dofullbright()
+
+
+
+Light.LightingChanged:Connect(dofullbright)
+end)
+
+Section:NewTextBox("Set Walkspeed", "mamamam", function(txt)
+	game.Players.LocalPlayer.Character.Humanoid.WalkSpeed = txt
+end)
+
+Section:NewTextBox("Set JumpPower", "mamamam2", function(txt)
+	game.Players.LocalPlayer.Character.Humanoid.JumpPower = txt
+end)
+
+Section:NewTextBox("Set Fov", "mamamam3", function(txt)
+	game.Workspace.CurrentCamera.FieldOfView = txt
+end)
+
+local Tab = Window:NewTab("Main2")
+local Section = Tab:NewSection("Toggle")
+    
+Section:NewToggle("Speed ", "Speed Fast", function(state)
+    if state then
+        game.Players.LocalPlayer.Character.Humanoid.WalkSpeed = 250
+    else
+        game.Players.LocalPlayer.Character.Humanoid.WalkSpeed = 16
+    end
+end)
+
+Section:NewToggle("Jump(Not Work) ", "Jump High ", function(state)
+    if state then
+        game.Players.LocalPlayer.Character.Humanoid.JumpPower = 250
+    else
+        game.Players.LocalPlayer.Character.Humanoid.JumpPower = 50
+    end
+end)
+
+Section:NewToggle("Player Fov", " Fov ", function(state)
+    if state then
+        game.Workspace.CurrentCamera.FieldOfView = 120
+    else
+        game.Workspace.CurrentCamera.FieldOfView = 80
+    end
+end)
+
+local Tab = Window:NewTab("Other Script")
+local Section = Tab:NewSection("Main Other")
+
+Section:NewButton("InfiniteYield", "Give You Admin", function()
+    loadstring(game:HttpGet('https://raw.githubusercontent.com/EdgeIY/infiniteyield/master/source'))()
+end)
+
+Section:NewButton("Noclip", "Thought Wall", function()
+    --[[Subscribe to Zaptosis on YouTube for more awesome scripts!
+
+Join our Discord: zaptosis.com/discord
+
+░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░
+
+███▀▀▀███░░░░░░░░░░░░░░░░░░░██░░░░░░░░░░░░░░░░░░░░██░░░░░░░░░
+
+█▀░░░███░░░░░░░░░░░░░░░░░░░░██░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░
+
+▀░░░███░░▄█▀██▄░▀████████▄██████░░▄██▀██▄░▄██▀██████░░▄██▀███
+
+░░░███░░██░░░██░░░██░░░▀██░░██░░░██▀░░░▀████░░░▀▀░██░░██░░░▀▀
+
+░░███░░░▄▄█████░░░██░░░░██░░██░░░██░░░░░██▀█████▄░██░░▀█████▄
+
+░███░░░▄██░░░██░░░██░░░▄██░░██░░░██▄░░░▄███▄░░░██░██░░█▄░░░██
+
+█████████████▀██▄░██████▀░░░▀████░▀█████▀░██████▀████▄██████▀
+
+░░░░░░░░░░░░░░░░░░██░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░
+
+░░░░░░░░░░░░░░░░▄████▄░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░
+
+░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░
+
+]]
+
+local StealthMode = true -- If game has an anticheat that checks the logs
+
+
+
+local Indicator
+
+
+
+if not StealthMode then
+
+    local ScreenGui = Instance.new("ScreenGui", game.CoreGui)
+
+    print("NOCLIP: Press E to Activate")
+
+    Indicator = Instance.new("TextLabel", ScreenGui)
+
+    Indicator.AnchorPoint = Vector2.new(0, 1)
+
+    Indicator.Position = UDim2.new(0, 0, 1, 0)
+
+    Indicator.Size = UDim2.new(0, 200, 0, 50)
+
+    Indicator.BackgroundTransparency = 1
+
+    Indicator.TextScaled = true
+
+    Indicator.TextStrokeTransparency = 0
+
+    Indicator.TextColor3 = Color3.new(0, 0, 0)
+
+    Indicator.TextStrokeColor3 = Color3.new(1, 1, 1)
+
+    Indicator.Text = "Noclip: Enabled"
+
+end
+
+
+
+local noclip = false
+
+local player = game.Players.LocalPlayer
+
+local character = player.Character or player.CharacterAdded:Wait()
+
+
+
+local mouse = player:GetMouse()
+
+
+
+mouse.KeyDown:Connect(function(key)
+
+    if key == "e" then
+
+        noclip = not noclip
+
+
+
+        if not StealthMode then
+
+            Indicator.Text = "Noclip: " .. (noclip and "Enabled" or "Disabled")
+
+        end
+
+    end
+
+end)
+
+
+
+while true do
+
+    player = game.Players.LocalPlayer
+
+    character = player.Character
+
+
+
+    if noclip then
+
+        for _, v in pairs(character:GetDescendants()) do
+
+            pcall(function()
+
+                if v:IsA("BasePart") then
+
+                    v.CanCollide = false
+
+                end
+
+            end)
+
+        end
+
+    end
+
+
+
+    game:GetService("RunService").Stepped:wait()
+
+end
+end)
+
+local Tab = Window:NewTab("Toggle Ui")
+local Section = Tab:NewSection("Mobile Is Good")
+
+Section:NewKeybind("ToggleUi", "On/Off", Enum.KeyCode.F, function()
+	Library:ToggleUI()
+end) --This Where You Put The Script That Will Be Loaded If The Key Is Correct
+end
+
+OrionLib:MakeNotification({
+	Name = "Logged In!",
+	Content = "You need key "..Player.Name..".",
+	Image = "rbxassetid://4483345998",
+	Time = 5
+}) --Notification
+
+getgenv().Key = "MaMa" --Put The Correct Key Here
+getgenv().KeyInput = "string" --KeyInput Require To Make The Key Work
+
+local Tab = Window:NewTab("KEY SYSTEM") --This Will Make A Tab
+
+local Section = Tab:NewSection("Key System") --This Will Make A Section
+
+Section:NewTextBox("Enter Key", "Key", function(Value)
+		getgenv().KeyInput = Value
+end) 
+
+Section:NewButton("Check Key", "This Will Check The Key You Enter", function()
+            if getgenv().KeyInput == getgenv().Key then
+            OrionLib:MakeNotification({
+                Name = "Checking Key",
+                Content = "Checking The Key You Entered",
+                Image = "rbxassetid://4483345998",
+                Time = 5
+            })
+            wait(2)
+            OrionLib:MakeNotification({
+                Name = "Correct Key!",
+                Content = "The key you entered is Valid.",
+                Image = "rbxassetid://4483345998",
+                Time = 5
+            })
+            wait(.3)
+            CorrectKeyAndLoadTheScript()
+        else
+           OrionLib:MakeNotification({
+                Name = "Checking Key",
+                Content = "Checking The Key You Entered",
+                Image = "rbxassetid://4483345998",
+                Time = 5
+            })
+            wait(2)
+            OrionLib:MakeNotification({
+                Name = "Incorrect Key!",
+                Content = "The key you entered is invalid.",
+                Image = "rbxassetid://4483345998",
+                Time = 5
+            })
+        end
+end)  
+
+Section:NewButton("Get Key", "ButtonInfo", function()
+          		setclipboard("MaMa") --Put The Link Here
+          OrionLib:MakeNotification({
+                Name = "Copied Link!",
+                Content = "Success Copied Link.",
+                Image = "rbxassetid://4483345998",
+                Time = 5
+            })
+end)
